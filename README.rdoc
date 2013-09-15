@@ -1,7 +1,10 @@
-== README
+== Unlib
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+An opensource application using ruby on rails. 
+
+==Purpose
+
+For hackerspaces to originize all the items that they have at their disposal. 
 
 Things you may want to cover:
 
