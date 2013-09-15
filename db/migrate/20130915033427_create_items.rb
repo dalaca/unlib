@@ -10,6 +10,7 @@ class CreateItems < ActiveRecord::Migration
     	t.string 	:item_qr
     	t.integer	:category_id
     	t.integer	:label_id
+    	t.integer :log_id
     	t.timestamp
     end
   end
