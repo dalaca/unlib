@@ -1,14 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
   <title>Unlib</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+	  <div class="navbar">
+    	<div class="navbar-inner">
+    		<a class="brand" href="#">UnLib</a>
+    		<ul class="nav">
+    			<li class="active"><a href="#">Add Asset</a></li>
+    			<li><a href="#">Edit Asset</a></li>
+    			<li><a href="#">Login</a></li>
+    		</ul>
+    	</div>
+    </div>
 
-<%= yield %>
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="span2">
+				<!--Sidebar content-->
+    	</div>
+    	<div class="span10">
+    		<%= yield %>
+    	</div>
+    </div>
+   </div>
+
+
 
 </body>
 </html>
+
+    
+    
+    
+    
+   
