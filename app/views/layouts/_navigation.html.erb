@@ -1,0 +1,27 @@
+<div class="navbar">
+ <div class="navbar-inner">
+  <div class="container">
+   <a class="brand" href="#">Unlib</a>
+    <ul class="nav">
+     <li class="active">
+      <a href="#">Login</a>
+     </li>
+     <li>
+     	<%= link_to "New Asset", new_item_path %>
+     </li>
+      <div class='btn-group nav-item'>
+        <%= link_to '#', class: "btn btn-small dropdown-toggle", 'data-toggle'=> "dropdown" do %>
+              Categories<span class="caret"></span>
+        <% end %>
+        <ul class="dropdown-menu">
+         <% Category.all.each do |category| %> 
+          <li>
+           <%= link_to category.name, category_path(category) %>
+          </li>
+        <% end %>
+    	  </ul>
+      </div>
+     </ul>
+    </div>
+   </div>
+ </div>

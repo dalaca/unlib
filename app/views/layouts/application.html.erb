@@ -9,24 +9,14 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	  <div class="navbar">
-    	<div class="navbar-inner">
-    		<a class="brand" href="#">UnLib</a>
-    		<ul class="nav">
-    			<li class="active"><a href="#">Add Asset</a></li>
-    			<li><a href="#">Edit Asset</a></li>
-    			<li><a href="#">Login</a></li>
-    		</ul>
-    	</div>
-    </div>
-
+	 <%= render "layouts/navigation" %>
 	<div class="container-fluid">
 		<div class="row-fluid">
 			<div class="span2">
-				<!--Sidebar content-->
+				<%= yield %>
     	</div>
     	<div class="span10">
-    		<%= yield %>
+    		<!-- Body-->
     	</div>
     </div>
    </div>
